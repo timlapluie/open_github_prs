@@ -56,7 +56,7 @@ begin
     open_prs += get_pr_data(author)
   end
 
-  open_prs = open_prs.select do |pr|
+  open_prs = open_prs.compact.select do |pr|
     pr['url'].include?('github.com/Sage')
   end
 
