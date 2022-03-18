@@ -72,4 +72,6 @@ begin
   puts pr_details
 rescue
   puts '⚡️'
+  puts '---'
+  puts 'An error occurred while fetching PR data.'
 end
